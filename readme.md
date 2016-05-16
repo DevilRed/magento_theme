@@ -1,3 +1,6 @@
+TODO: Modify according to what client requires
+
+
 - Magento theme build on WATERLEE starter theme
 
 

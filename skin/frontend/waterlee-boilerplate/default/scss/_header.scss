@@ -1,0 +1,139 @@
+.top-menu{
+	padding-top: 35px;
+	ul{
+		list-style-type: none;
+	}
+	.account-options{
+		margin-left: 0;
+		li{
+			display: inline-block;
+			margin: 0 7px;
+			&:first-child{
+				margin-left: 0;
+			}
+			&:last-child{
+				margin-right: 0;
+			}
+
+			a{
+				color: #535355;
+				text-transform: capitalize;
+				font-family: $font;
+				font-size: 15px;
+			}
+		}
+	}
+	.language-selector{
+		position: relative;
+		span{
+			display: inline-block;
+			text-transform: capitalize;
+			&.selected{
+				padding-right: 15px;
+				color: #1ebd9d;
+				&:hover{
+					ul{
+						display: block;
+					}
+				}
+				@include triangle('bottom');
+			}
+		}
+		ul{
+			position: absolute;
+			display: none;
+			margin: 0;
+		}
+	}
+}//top-menu
+
+
+nav{
+	background-color: #535355;
+	padding-top: 8px;
+	padding-bottom: 4px;
+
+	.slogan{
+		color: #fff;
+		font-size: 0.9em;
+		position: relative;
+		top: 5px;
+		margin-left: 23px;
+		font-family: $font;
+		font-weight: 400px;
+	}
+
+	.menu{
+		list-style-type: none;
+		li{
+			display: inline-block;
+			a{
+				text-transform: uppercase;
+				color: #fff;
+				font-size: 0.9em;
+				font-size: 12px;
+				font-family: $font;
+				font-weight: 500;
+			}
+		}
+	}
+}//nav
+.search{
+	position: relative;
+	#logo{
+		position: absolute;
+		top: 0;
+		left: 0;
+		min-width: 170px;
+		text-align: center;
+		background-color: #6fcfbc;
+		padding-top: 29px;
+		padding-bottom: 26px;
+	}
+	form{
+		height: auto;
+		margin: 12px 0 10px 0;
+		input{
+			display: inline-block;
+		}
+		input[type="text"]{
+			border: 1px solid #dcdbdb;
+			max-width: 790px;
+			float: left;
+			box-sizing: border-box;
+			height: 30px;
+			margin-bottom: 0;
+		}
+		input[type="submit"]{
+			background-color: #535355;
+			color: #fff;
+			min-width: 96px;
+			border: 0;
+			height: 30px;
+			text-transform: uppercase;
+			font-size: 12px;
+		}
+	}
+}//search
+
+
+.super-header{
+	background-color: transparent;
+}
+.top-bar{
+	background-color: #535355;
+	min-height: 50px;
+}
+.menu{
+	margin-top: 4px;
+
+	li{
+		display: inline-block;
+		padding: 0 10px;
+
+		a{
+			font-family: $font;
+		}
+	}
+
+}

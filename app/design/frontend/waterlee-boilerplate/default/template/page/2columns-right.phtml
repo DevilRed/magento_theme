@@ -47,12 +47,51 @@
     <?php echo $this->getChildHtml('global_notices') ?>
         <?php echo $this->getChildHtml('header') ?>
         <?php echo $this->getChildHtml('breadcrumbs') ?>
-        <div class="main-container col2-right-layout row">
-            <div class="col-main columns large-9 medium-12">
-                    <?php echo $this->getChildHtml('global_messages') ?>
-                    <?php echo $this->getChildHtml('content') ?>
+        <section class="search row">
+              <div id="logo"><img src="<?php echo $this->getSkinUrl('images'); ?>/logo.png"></div>
+              <form action="#" class="medium-10 float-right">
+                <input type="text">
+                <input type="submit" value="search">
+            </form>
+        </section>
+        <section class="body home row">
+          <ul class="right custom-menu">
+            <li><a href="#">furniture</a></li>
+            <li><a href="#">electronics</a></li>
+            <li><a href="#">apparel</a></li>
+            <li><a href="#">music</a></li>
+            <li><a href="#">ebooks</a></li>
+          </ul>
+          <section class="images row">
+            <article class="big-img">
+              <a href="#"><img src="<?php echo $this->getSkinUrl('images'); ?>/new-collection-img.jpg" alt="collection"></a>
+            </article>
+            <article class="small first">
+              <a href="#"><img src="<?php echo $this->getSkinUrl('images'); ?>/home3-img.jpg" alt="shoes"></a>
+            </article>
+            <article class="small">
+              <a href="#"><img src="<?php echo $this->getSkinUrl('images'); ?>/shoes-img.jpg" alt="sale"></a>
+            </article>
+            <div class="bottom">
+              <article class="notice">
+                <p>free shipping</p>
+                <p>14 days return policy</p>
+                <p>largest selection wares</p>
+              </article>
+              <article class="dresses">
+                <a href="#"><img src="<?php echo $this->getSkinUrl('images'); ?>/dresses-img.jpg" alt="dresses"></a>
+              </article>
             </div>
-            <div class="col-right sidebar columns large-3"><?php echo $this->getChildHtml('right') ?></div>
+          </section>
+        </section>
+
+        <div class="main-container col2-right-layout row">
+            <div class="col-main columns large-12 medium-12">
+                    <?php echo $this->getChildHtml('global_messages') ?>
+                    <?php //echo $this->getChildHtml('content') ?>
+
+            </div>
+            <!-- <div class="col-right sidebar columns large-3"><?php echo $this->getChildHtml('right') ?></div> -->
         </div>
         <?php echo $this->getChildHtml('footer') ?>
         <?php echo $this->getChildHtml('before_body_end') ?>
