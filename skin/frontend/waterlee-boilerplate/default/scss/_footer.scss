@@ -48,11 +48,17 @@
 	.copyright{
 		clear: both;
 		border-top: 1px solid  #e0e0e0;
+		padding-bottom: 20px;
 		p{
 			color: #9b9b9b;
 			font-size: 14px;
 			margin-top: 10px;
 			font-family: $timesRoman;
+			text-transform: capitalize;
 		}
 	}
+}
+.super-header-content.row.collapse{
+	border: 2px solid blue;
+	display: none;
 }
