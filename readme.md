@@ -2,6 +2,7 @@ TODO: Modify according to what client requires
 
 
 - Magento theme build on WATERLEE starter theme
+- For choosing the theme, you have to set the package name to "waterlee-boilerplate" to do so, go to: System -> Configuration -> Design (tab) -> Current Package Name
 
 
 #Magento HTML5 responsive boilerplate
